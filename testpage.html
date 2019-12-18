@@ -63,28 +63,41 @@
         <!-- open logincard button -->
         <button href="#LoginCard" class="btn btn-default" data-toggle="collapse">Toggle LoginCard</button>
         <!-- /open logincard button -->
+        <!-- open logout confirmation button -->
+        <button href="#LogoutCard" class="btn btn-default" data-toggle="collapse">Toggle LogoutCard</button>
+        <!-- /open logout confirmation button -->
         <!-- logincard -->
         <div id="LoginCard" class="collapse centered">
             <div class="card text-white bg-primary mb-1">
-                <h3 class="card-header">Login <button href="#LoginCard" type="button" class="close bg-secondary" data-toggle="collapse" aria-label="Close"><span aria-hidden="true">&times;</span></button> </h3>
+                <h3 class="card-header">Login <button href="#LoginCard" type="button" class="close" data-toggle="collapse" aria-label="Close"><span class="text-white" aria-hidden="true">&times;</span></button></h3>
                 <div class="card-body">
                     <form>
                         <fieldset>
                             <div class="form-group">
-                                <label for="inputUsername">Username</label>
-                                <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+                                <label for="inputUsernameLoginCard">Username</label>
+                                <input type="text" class="form-control" id="inputUsernameLoginCard" placeholder="Username">
                             </div>
                             <div class="form-group">
-                                <label for="inputPassword">Password</label>
-                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                <label for="inputPasswordLoginCard">Password</label>
+                                <input type="password" class="form-control" id="inputPasswordLoginCard" placeholder="Password">
                             </div>
                             <button type="reset" class="btn btn-danger text-primary float-left">Reset</button>
-                            <button type="submit" class="btn btn-success text-primary float-right">Submit</button>
+                            <button type="submit" id="LoginSubmitButton" class="btn btn-success text-primary float-right">Submit</button>
                         </fieldset>
                     </form>
                 </div>
             </div>
         </div>
         <!-- /logincard -->
+        <!-- logoutcard -->
+        <div id="LogoutCard" class="collapse centered">
+            <div class="card text-white bg-primary mb-1">
+                <h3 class="card-header">Logout <button href="#LogoutCard" type="button" class="close" data-toggle="collapse" aria-label="Close"><span class="text-white" aria-hidden="true">&times;</span></button></h3>
+                <div class="card-body text-center">
+                        <button class="btn btn-danger text-primary float-center">Log out</button>
+                </div>
+            </div>
+        </div>
+        <!-- /logoutcard -->
     </body>
 </html>
