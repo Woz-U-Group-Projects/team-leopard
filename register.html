@@ -74,15 +74,26 @@
                 <legend>Register</legend>
                 <div class="form-group">
                     <label for="usernameInputRegistration">
-                        <span data-toggle="tooltip" data-placement="left" title="" data-original-title="Something unique to be known as!">Username</span>
+                        <span data-toggle="tooltip" data-placement="left" title=""
+                            data-original-title="Something unique to be known as!">Username</span>
                     </label>
                     <input type="text" class="form-control" id="usernameInputRegistration" placeholder="Username">
                 </div>
-                <div class="form-group">
+                <div class="form-group" id="passwordInputRegistrationGroup">
                     <label for="passwordInputRegistration">
-                        <span data-toggle="tooltip" data-placement="left" title="" data-original-title="Something memorable, unique, and secure!">Password</span>  
+                        <span data-toggle="tooltip" data-placement="left" title=""
+                            data-original-title="Something memorable, unique, and secure!">Password</span>
                     </label>
                     <input type="password" class="form-control" id="passwordInputRegistration" placeholder="Password">
+                </div>
+                <div class="form-group" id="passwordInputRegistrationConfirmationGroup">
+                    <label for="passwordInputRegistrationConfirmation">
+                        <span data-toggle="tooltip" data-placement="left" title=""
+                            data-original-title="Make sure it's the same!">Password confirmation</span>
+                    </label>
+                    <input type="password" class="form-control" id="passwordInputRegistrationConfirmation"
+                        placeholder="Password">
+                    <div class="valid-feedback" id="validMessage"></div>
                 </div>
                 <button type="reset" class="btn btn-danger text-primary float-left">Reset</button>
                 <button type="submit" id="LoginSubmitButton"
@@ -93,11 +104,7 @@
     <!-- /Registration form -->
 
     <!-- allowing of tooltips -->
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
+    <script src="register.js" type="text/JavaScript"></script>
     <!-- /allowing of tooltips -->
 </body>
 
