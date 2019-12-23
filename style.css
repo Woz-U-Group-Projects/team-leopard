@@ -1,5 +1,28 @@
+.page-holder {
+    min-height: 100vh;
+}
+
+.bg-cover {
+    background: url(PageTemplates/Images/grayscalebackground.png);
+    background-size: cover;
+}
+
 #mainBody {
     padding: 1em;
+}
+
+.main-wrapper {
+    height: 100vh;
+}
+
+.rightBar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 100%;
+    transform: translate(-100%, 0);
+    backdrop-filter: blur(5px);
 }
 
 .card {
