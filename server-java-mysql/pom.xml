@@ -8,11 +8,11 @@
 		<version>2.1.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>groupproject</artifactId>
+	<groupId>com.registration</groupId>
+	<artifactId>application</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>groupproject</name>
-	<description>Demo project for Spring Boot</description>
+	<name>application</name>
+	<description>Registration for users</description>
 
 	<properties>
 		<java.version>1.8</java.version>
