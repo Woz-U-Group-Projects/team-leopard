@@ -17,7 +17,42 @@ public class RegistrationModel {
   private String lastname;
   private String email;
   private String password;
+  private String birthdate;
+  private String location;
+  private String diet;
+  private String allergies;
+  private String gender;
   
+public String getGender() {
+	return gender;
+}
+public void setGender(String gender) {
+	this.gender = gender;
+}
+public String getBirthdate() {
+	return birthdate;
+}
+public void setBirthdate(String birthdate) {
+	this.birthdate = birthdate;
+}
+public String getLocation() {
+	return location;
+}
+public void setLocation(String location) {
+	this.location = location;
+}
+public String getDiet() {
+	return diet;
+}
+public void setDiet(String diet) {
+	this.diet = diet;
+}
+public String getAllergies() {
+	return allergies;
+}
+public void setAllergies(String allergies) {
+	this.allergies = allergies;
+}
 public Long getId() {
 	return id;
 }

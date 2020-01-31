@@ -47,6 +47,11 @@ public class RegistrationController {
       foundRegistrationModel.setLastname(registrationModel.getLastname());
       foundRegistrationModel.setEmail(registrationModel.getEmail());
       foundRegistrationModel.setPassword(registrationModel.getPassword());
+      foundRegistrationModel.setLocation(registrationModel.getLocation());
+      foundRegistrationModel.setBirthdate(registrationModel.getBirthdate());
+      foundRegistrationModel.setDiet(registrationModel.getDiet());
+      foundRegistrationModel.setAllergies(registrationModel.getAllergies());
+      foundRegistrationModel.setGender(registrationModel.getGender());
       registrationRepository.save(foundRegistrationModel);
       return foundRegistrationModel;
     }
