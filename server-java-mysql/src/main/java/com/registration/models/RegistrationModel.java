@@ -1,5 +1,6 @@
 package com.registration.models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,14 +14,22 @@ public class RegistrationModel {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
+
+  @column(name = "firstname")
   private String firstname;
+  @column(name = "lastname")
   private String lastname;
+  @column(name = "email")
   private String email;
-  private String password;
+  @column(name ="birthdate")
   private String birthdate;
+  @column(name="location")
   private String location;
+  @column(name= "diet")
   private String diet;
+  @column(name= "allergies")
   private String allergies;
+  @column(name="gender")
   private String gender;
   
 public String getGender() {
