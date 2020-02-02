@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/registrations")
+@RequestMapping("/registration")
 @CrossOrigin(origins = "http://localhost:4200,http://localhost:3000")
 public class RegistrationController {
 
