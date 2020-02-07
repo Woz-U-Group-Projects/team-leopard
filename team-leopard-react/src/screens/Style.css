@@ -15,6 +15,11 @@
     height: 100vh;
 }
 
+.about {
+    border-color: black;
+    border-style: solid;
+}
+
 .rightBar {
     height: 100%;
     display: flex;
@@ -25,8 +30,21 @@
     backdrop-filter: blur(5px);
 }
 
-.card {
+.card-small {
     max-width: 20rem;
+}
+
+.blank-image {
+    height: 200px; 
+    width: 400px; 
+    display: block;
+}
+
+.card-recipe {
+    max-width: 40rem;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, 0);
 }
 
 .centered {

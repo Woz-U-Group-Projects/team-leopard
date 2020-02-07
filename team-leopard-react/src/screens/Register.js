@@ -1,6 +1,8 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
+import Container from 'react-bootstrap/Container'
+import Col from 'react-bootstrap/Col'
 import Header from '../components/Header.js';
 import axios from 'axios';
 import './Style.css';
@@ -36,42 +38,52 @@ function Register() {
         };
 
         return (
-            <Form noValidate validated={validated} onSubmit={handleSubmit}>
-                <Form.Row>
-                    <Form.Group controlId="validationCustom01">
-                        <Form.Label>First name</Form.Label>
-                        <Form.Control required type="text" placeholder="First name" defaultValue="John" name='firstname' onChange={handleChange} />
-                        <Form.Control.Feedback>Accepted</Form.Control.Feedback>
-                    </Form.Group>
-                </Form.Row>
-                <Form.Row>
-                    <Form.Group controlId="validationCustom02">
-                        <Form.Label>Last name</Form.Label>
-                        <Form.Control required type="text" placeholder="Last name" defaultValue="Doe" name='lastname' onChange={handleChange} />
-                        <Form.Control.Feedback>Accepted</Form.Control.Feedback>
-                    </Form.Group>
-                </Form.Row>
-                <Form.Row>
-                    <Form.Group controlId="validationCustomEmail">
-                        <Form.Label>Email</Form.Label>
-                        <Form.Control required type="email" placeholder="Email" defaultValue="email@host.com" name='email' onChange={handleChange} />
-                        <Form.Control.Feedback>Accepted</Form.Control.Feedback>
-                        <Form.Control.Feedback type="invalid">Please input an email</Form.Control.Feedback>
-                    </Form.Group>
-                </Form.Row>
-                <Form.Row>
-                    <Form.Group controlId="validationPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control required type="password" placeholder="Password" name='password' onChange={handleChange} />
-                        <Form.Control.Feedback>Accepted</Form.Control.Feedback>
-                        <Form.Control.Feedback type="invalid">Please input a password</Form.Control.Feedback>
-                    </Form.Group>
-                </Form.Row>
-                <Form.Row>
-                    <Button variant="danger" type="reset">Reset</Button>
-                    <Button variant="success" type="submit">Submit</Button>
-                </Form.Row>
-            </Form>
+            <Container fluid>
+                <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                    <Form.Row>
+                        <Col lg="auto">
+                            <Form.Group controlId="validationCustom01">
+                                <Form.Label>First name</Form.Label>
+                                <Form.Control required type="text" placeholder="First name" defaultValue="John" name='firstname' onChange={handleChange} />
+                                <Form.Control.Feedback>Accepted</Form.Control.Feedback>
+                            </Form.Group>
+                        </Col>
+                    </Form.Row>
+                    <Form.Row>
+                        <Col lg="auto">
+                            <Form.Group controlId="validationCustom02">
+                                <Form.Label>Last name</Form.Label>
+                                <Form.Control required type="text" placeholder="Last name" defaultValue="Doe" name='lastname' onChange={handleChange} />
+                                <Form.Control.Feedback>Accepted</Form.Control.Feedback>
+                            </Form.Group>
+                        </Col>
+                    </Form.Row>
+                    <Form.Row>
+                        <Col lg="auto">
+                            <Form.Group controlId="validationCustomEmail">
+                                <Form.Label>Email</Form.Label>
+                                <Form.Control required type="email" placeholder="Email" defaultValue="email@host.com" name='email' onChange={handleChange} />
+                                <Form.Control.Feedback>Accepted</Form.Control.Feedback>
+                                <Form.Control.Feedback type="invalid">Please input an email</Form.Control.Feedback>
+                            </Form.Group>
+                        </Col>
+                    </Form.Row>
+                    <Form.Row>
+                        <Col lg="auto">
+                            <Form.Group controlId="validationPassword">
+                                <Form.Label>Password</Form.Label>
+                                <Form.Control required type="password" placeholder="Password" name='password' onChange={handleChange} />
+                                <Form.Control.Feedback>Accepted</Form.Control.Feedback>
+                                <Form.Control.Feedback type="invalid">Please input a password</Form.Control.Feedback>
+                            </Form.Group>
+                        </Col>
+                    </Form.Row>
+                    <Form.Row>
+                        <Button variant="danger" type="reset">Reset</Button>
+                        <Button variant="success" type="submit">Submit</Button>
+                    </Form.Row>
+                </Form>
+            </Container>
         );
     }
     return (

@@ -8,7 +8,7 @@ import { NavDropdown } from 'react-bootstrap';
 function Header({ title }) {
     return (
         <>
-            <Navbar bg="primary" expand="lg" className="navbar navbar-expand-lg navbar-dark bg-primary navbar-fixed-top">
+            <Navbar bg="primary" expand="lg" className="navbar navbar-expand-lg navbar-dark bg-primary" sticky="top">
                 <LinkContainer to="/">
                     <Navbar.Brand> { title } </Navbar.Brand>
                 </LinkContainer>
@@ -19,7 +19,7 @@ function Header({ title }) {
                                 <NavDropdown.Item><Link to="/profile">Profile</Link></NavDropdown.Item>
                                 <NavDropdown.Item><Link to="/recipes">My recipes</Link></NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item><a className="">Login</a></NavDropdown.Item>
+                                <NavDropdown.Item>Login</NavDropdown.Item>
                         </NavDropdown>
                         <LinkContainer to="/home" activeClassName="active">
                             <Nav.Link>Home</Nav.Link>

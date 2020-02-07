@@ -15,22 +15,24 @@ public class RegistrationModel {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
 
-  @column(name = "firstname")
+  @Column(name = "firstname")
   private String firstname;
-  @column(name = "lastname")
+  @Column(name = "lastname")
   private String lastname;
-  @column(name = "email")
+  @Column(name = "email")
   private String email;
-  @column(name ="birthdate")
+  @Column(name ="birthdate")
   private String birthdate;
-  @column(name="location")
+  @Column(name="location")
   private String location;
-  @column(name= "diet")
+  @Column(name= "diet")
   private String diet;
-  @column(name= "allergies")
+  @Column(name= "allergies")
   private String allergies;
-  @column(name="gender")
+  @Column(name="gender")
   private String gender;
+  @Column(name="password")
+  private String password;
   
 public String getGender() {
 	return gender;
