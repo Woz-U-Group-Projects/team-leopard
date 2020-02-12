@@ -10,8 +10,9 @@ function About() {
                 <div className="main-wrapper">
                     <Header title="About" />
                     <Container>
-                        <div className="jumbotron centered about">
+                        <div className="jumbotron about">
                             <h1 className="display-3">About</h1>
+                            <img className="about-image" />
                             <hr className="my-4" />
                             <p className="lead">Made by Minerva T. Cuabo, Lavota Carter, Emmanuel Pichardo, and Austin Jacobsen for the Woz-U final project</p>
                             <hr className="my-4" />

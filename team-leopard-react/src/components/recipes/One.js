@@ -31,7 +31,7 @@ function Page() {
                                     </p>
                     </div>
                     <div className="card-footer text-muted">
-                        <a href="https://www.gourmetgarden.com/en-us/recipes/appetizers/avocado-and-parsley-salsa-on-flatbread" className="card-link float-left">Source</a>
+                        <a href="https://www.gourmetgarden.com/en-us/recipes/appetizers/avocado-and-parsley-salsa-on-flatbread" target="_blank" className="card-link float-left">Source</a>
                     </div>
                 </div>
             </Container>
@@ -65,7 +65,7 @@ function Card() {
                                     </p>
                 </div>
                 <div className="card-footer text-muted">
-                    <a href="https://www.gourmetgarden.com/en-us/recipes/appetizers/avocado-and-parsley-salsa-on-flatbread" className="card-link float-left">Source</a>
+                    <a href="https://www.gourmetgarden.com/en-us/recipes/appetizers/avocado-and-parsley-salsa-on-flatbread" target="_blank" className="card-link float-left">Source</a>
                     <button type="button" className="card-link float-right" data-dismiss="alert">Close</button>
                 </div>
             </div>

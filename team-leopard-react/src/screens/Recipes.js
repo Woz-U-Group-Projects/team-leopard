@@ -6,7 +6,7 @@ function Recipes() {
     return (
         <>
         <Header title="Recipes" />
-        <Brief />
+        <Page />
 
         </>
     );
